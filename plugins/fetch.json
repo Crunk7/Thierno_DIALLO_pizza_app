@@ -1,0 +1,10 @@
+{
+  "cordova-base64-to-gallery": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-base64-to-gallery"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

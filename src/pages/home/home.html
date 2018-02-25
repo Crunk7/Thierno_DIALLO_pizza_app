@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let pizza of listPizza" (click)="getpizza(pizza)">
+      <ion-card-content>
+        <ion-card-title>{{pizza.name}}</ion-card-title>
+      </ion-card-content>
+        <div>
+          <img class="image" alt="Embedded Image" src="{{pizza.picture}}" (click)="presentPizzaModal(pizza)"/>
+          <label>{{pizza.price}} €</label>
+        </div>
+    </ion-card>
+</ion-content>
+<ion-list no-lines>
+  <!--
+  <button ion-item *ngFor="let pizza of listPizza">
+    {{pizza.name}}
+  </button>
+  -->
+</ion-list>
